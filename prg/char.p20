@@ -1,0 +1,9 @@
+fun putChar(c:char):void = none
+var c : char
+fun main():integer = {
+    c = 'a';
+    putChar(c);
+    0;
+} where {
+    var c : char
+}

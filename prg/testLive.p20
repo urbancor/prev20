@@ -1,0 +1,14 @@
+fun f(i:integer, j:integer):integer =
+{
+       if (1<0) then i else l;
+       f(i, j);
+}
+var l: integer
+
+# ostali: od prejsnje dn, ali:
+fun g(i:integer, j:integer):integer =
+{
+       if (1<0) then i else k where {var k: integer};
+       f(i, j);
+}
+fun main() : integer =65536

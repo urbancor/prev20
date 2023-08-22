@@ -1,0 +1,22 @@
+MEMFRAMES; ...
+naredimo visitor
+Če sem prav razumela:
+Imamo 2 konteksta: enega za funkcije, 1 za recorde
+imamo 3 nove “lastnosti?”: frams, access, string
+V accessu moramo povedat za vsako spremenljivko, parameter, komponento povedat način dostopa
+v frames: klicni zapis
+v string: imamo absolutni dostop, vsaka konstanta tipa string je kazalec na char -> v abs. dostop  lahko začetno vrednost spravimo
+memAbsAccess: absolutni access: definiramo: labelo, velikost, ki je podedovana iz memaccess in init
+= (i where {var i:integer})+(j where {var j:integer})
+2 lokalni spremeljivki mamo
+str1: BYTE "Hello, world"
+_i: WORD 0
+i+"qwerty"
+FUNKCIJSKI CONTEXT:
+argSize - gremo skozi vse klice znotraj funkcije, mislim da vzamemo velikost od max
+paramsSize: to je tisto s 0 ali + neki mnde, vedno bo vsaj SL tam -> se ima inicializoran size kot tak
+RECORD CONTEXT:
+da vemo kje bo posamezna komponenta v pomnilniku -> record bo že imel tip in velikost, a nas zanima koliko so oddaljene posamezne komponente.
+LVALUE: 
+dovolj da assignamo le tiste, ki so true
+naredimo visitor

@@ -1,0 +1,56 @@
+fun putChar(c:char):void = none
+fun getChar():char = (0:char)
+fun putInteger(i:integer):void =
+    {
+      if (i<0) then { putChar('-'); i=-i; } else none;
+      if (i==0) then putChar('0') else put(i);
+    }
+    where
+    {
+      fun put(i:integer):void =
+          {
+            if (i==0) then none else {
+              put(i/10);
+              putChar(((i%10+('0':integer)):char));
+            };
+          }
+    }
+var j: ^char
+var i: integer
+var c:char
+var t :integer
+fun main():integer =
+    { 
+
+      #c = getChar();
+      #putChar(c);
+      #t = 0;
+      i = test(0);
+      #putInteger(i);
+      #i = 5;
+      putChar('i');
+      putInteger(i);
+      #putInteger(t);
+      #putChar('t');
+      #putInteger(test(t));
+      #while(10>i) do {
+      #  putInteger(i);
+      #  #putChar('a');
+      #  i=i+1;  
+      #};
+      0; 
+    } where {
+      
+      fun test(s:integer):integer = {
+      
+        while(s<10) do {
+          
+          s=s+1;
+          putInteger(s);
+        };
+        #s=s+10;
+        s;
+      } where {
+        var n:integer
+      }
+    }

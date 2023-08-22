@@ -1,0 +1,49 @@
+'rm' -fr -fr test.*.xml test.*.html
+if java -cp ../bin:../src:../lib/antlr-4.8-complete.jar prev.Compiler --xsl=../lib/xsl/ --logged-phase=all --target-phase=none --num-regs=4 test.p20 ; then for XML in `'ls' -1 test.*.xml` ; do xsltproc $XML -o `basename $XML xml`html; done ; fi
+:-) This is PREV'20 compiler:
+STO $253,$254,0
+SET $253,$254
+SUB $254,$254,-16
+STO 4,$253,-8
+JMP L0
+L0
+SET $0,$253
+SETL $2,8
+SET $1,$2
+ADD $2,$0,$1
+SET $0,$2
+SETL $0,4
+SET $1,$0
+STO $1, $0,0
+LDA $0,_i
+SET $1,$0
+SETL $0,1
+SET $2,$0
+SETL $0,8
+SET $3,$0
+MUL $0,$2,$3
+SET $2,$0
+ADD $0,$1,$2
+SET $1,$0
+SETL $0,5
+SET $1,$0
+SET $2,$253
+SETL $0,8
+SET $3,$0
+ADD $0,$2,$3
+LDO $2,$0,0
+SET $0,$2
+ADD $2,$1,$0
+SET $0,$2
+STO $0, $1,0
+SETL $1,1403
+INCML $1,3
+SET $0,$1
+SET $1,$0
+JMP L1
+LDO 4,$253,-8
+ADD $254,$254,16
+LDO $253,$2540
+POP 4
+
+:-) Done.

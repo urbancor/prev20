@@ -1,0 +1,1439 @@
+'rm' -fr -fr test-03.*.xml test-03.*.html
+if java -cp ../bin:../src:../lib/antlr-4.8-complete.jar prev.Compiler --xsl=../lib/xsl/ --logged-phase=all --target-phase=none --num-regs=5 test-03.p20 ; then for XML in `'ls' -1 test-03.*.xml` ; do xsltproc $XML -o `basename $XML xml`html; done ; fi
+:-) This is PREV'20 compiler:
+_exit
+% start prlogue
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+STO FP,$0,0
+SET FP,SP
+SETL $0,16
+INCML $0,16
+SUB SP,SP,$0
+SETL $0,-8
+STO rJ,FP,0
+JMP L52
+L52
+SETL $0,1984
+SET $1,$0
+SET $0,$1
+JMP L53
+L53
+STO $0,FP,0
+SETL $0,16
+INCML $0,16
+SUB $0,FP,$0
+LDO 4,$0,0
+SET SP,FP
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+LDO FP,$0,0
+POP 5,0
+
+_putChar
+% start prlogue
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+STO FP,$0,0
+SET FP,SP
+SETL $0,16
+INCML $0,16
+SUB SP,SP,$0
+SETL $0,-8
+STO rJ,FP,0
+JMP L54
+L54
+SETL $0,1984
+SET $1,$0
+SET $0,$1
+JMP L55
+L55
+STO $0,FP,0
+SETL $0,16
+INCML $0,16
+SUB $0,FP,$0
+LDO 4,$0,0
+SET SP,FP
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+LDO FP,$0,0
+POP 5,0
+
+_getChar
+% start prlogue
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+STO FP,$0,0
+SET FP,SP
+SETL $0,16
+INCML $0,16
+SUB SP,SP,$0
+SETL $0,-8
+STO rJ,FP,0
+JMP L56
+L56
+SETL $0,0
+SET $2,$0
+SETL $1,256
+SET $0,$1
+DIV $1,$2,$0
+GET $1,6
+SET $0,$1
+SET $1,$0
+JMP L57
+L57
+STO $1,FP,0
+SETL $0,16
+INCML $0,16
+SUB $0,FP,$0
+LDO 4,$0,0
+SET SP,FP
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+LDO FP,$0,0
+POP 5,0
+
+L0
+% start prlogue
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+STO FP,$0,0
+SET FP,SP
+SETL $0,32
+INCML $0,32
+SUB SP,SP,$0
+SETL $0,-8
+STO rJ,FP,0
+JMP L58
+L58
+SET $2,$253
+SETL $0,8
+SET $1,$0
+ADD $0,$2,$1
+LDO $1,$0,0
+SET $0,$1
+SETL $1,0
+SET $2,$1
+CMP $1,$0,$2
+ZSZ $1,$1,1
+BP $1,L4
+L60
+JMP L5
+L4
+SETL $0,1984
+JMP L6
+L5
+SET $2,$253
+SETL $0,8
+SET $1,$0
+ADD $0,$2,$1
+LDO $1,$0,0
+SET $2,$1
+SETL $0,10
+SET $1,$0
+LDO $0,$253,0
+STO $0,$254,0
+DIV $0,$2,$1
+STO $0,$254,8
+PUSHJ L0
+LDO $0,$254,0
+SETL $0,1984
+SET $1,$0
+SET $2,$253
+SETL $0,8
+SET $3,$0
+ADD $0,$2,$3
+LDO $2,$0,0
+SET $3,$2
+SETL $0,10
+SET $2,$0
+DIV $0,$3,$2
+GET $0,6
+SET $3,$0
+SETL $0,48
+SET $2,$0
+ADD $4,$3,$2
+SET $0,$4
+SETL $2,256
+SET $3,$2
+DIV $2,$0,$3
+GET $2,6
+SET $0,$2
+STO $1,$254,0
+STO $0,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+SET $1,$0
+L6
+SETL $1,1403
+INCML $1,3
+SET $0,$1
+SET $1,$0
+JMP L59
+L59
+STO $1,FP,0
+SETL $0,16
+INCML $0,16
+SUB $0,FP,$0
+LDO 4,$0,0
+SET SP,FP
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+LDO FP,$0,0
+POP 5,0
+
+_putInteger
+% start prlogue
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+STO FP,$0,0
+SET FP,SP
+SETL $0,32
+INCML $0,32
+SUB SP,SP,$0
+SETL $0,-8
+STO rJ,FP,0
+JMP L61
+L61
+SET $2,$253
+SETL $0,8
+SET $1,$0
+ADD $0,$2,$1
+LDO $1,$0,0
+SET $2,$1
+SETL $0,0
+SET $1,$0
+CMP $0,$2,$1
+ZSN $0,$0,1
+BP $0,L7
+L63
+JMP L8
+L7
+SETL $0,1984
+STO $0,$254,0
+SETL $0,45
+STO $0,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+SET $0,$253
+SETL $1,8
+SET $2,$1
+ADD $1,$0,$2
+SET $2,$1
+SET $1,$253
+SETL $0,8
+SET $2,$0
+ADD $0,$1,$2
+LDO $1,$0,0
+NEG $1,0,$1
+SET $0,$1
+STO $0, $2,0
+SETL $0,1403
+INCML $0,3
+JMP L9
+L8
+SETL $0,1984
+L9
+SET $1,$253
+SETL $0,8
+SET $2,$0
+ADD $0,$1,$2
+LDO $1,$0,0
+SET $2,$1
+SETL $0,0
+SET $1,$0
+CMP $0,$2,$1
+ZSZ $0,$0,1
+BP $0,L10
+L64
+JMP L11
+L10
+SETL $0,1984
+STO $0,$254,0
+SETL $0,48
+STO $0,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+JMP L12
+L11
+SET $2,$253
+SETL $0,8
+SET $1,$0
+STO $253,$254,0
+ADD $3,$2,$1
+LDO $0,$3,0
+STO $0,$254,8
+PUSHJ L0
+LDO $0,$254,0
+L12
+SETL $0,1403
+INCML $0,3
+SET $1,$0
+SET $0,$1
+JMP L62
+L62
+STO $0,FP,0
+SETL $0,16
+INCML $0,16
+SUB $0,FP,$0
+LDO 4,$0,0
+SET SP,FP
+SETL $0,8
+INCML $0,8
+SUB $0,SP,$0
+LDO FP,$0,0
+POP 5,0
+
+_getInteger
+% start prlogue
+SETL $0,32
+INCML $0,32
+SUB $0,SP,$0
+STO FP,$0,0
+SET FP,SP
+SETL $0,40
+INCML $0,40
+SUB SP,SP,$0
+SETL $0,16
+INCML $0,16
+STO rJ,FP,0
+JMP L65
+L65
+SET $0,$253
+SETL $2,8
+SET $1,$2
+ADD $2,$0,$1
+SET $1,$2
+SETL $1,1
+SET $0,$1
+STO $0, $1,0
+SET $2,$253
+SETL $0,16
+SET $1,$0
+ADD $3,$2,$1
+SET $0,$3
+SETL $0,0
+SET $1,$0
+STO $1, $0,0
+SET $2,$253
+SETL $0,24
+SET $1,$0
+ADD $3,$2,$1
+SET $0,$3
+SETL $0,1984
+SET $1,$0
+STO $1,$254,0
+PUSHJ _getChar
+LDO $1,$254,0
+SET $0,$1
+SET $1,$0
+STO $1, $0,0
+SET $2,$253
+SETL $0,24
+SET $3,$0
+ADD $1,$2,$3
+LDO $0,$1,0
+SET $1,$0
+SETL $0,43
+SET $2,$0
+CMP $0,$1,$2
+ZSZ $0,$0,1
+BP $0,L19
+L67
+JMP L20
+L19
+SET $2,$253
+SETL $0,8
+SET $1,$0
+ADD $0,$2,$1
+SET $1,$0
+SETL $1,1
+SET $0,$1
+STO $0, $1,0
+SET $1,$253
+SETL $0,24
+SET $2,$0
+ADD $0,$1,$2
+SET $1,$0
+SETL $0,48
+SET $2,$0
+STO $2, $1,0
+SETL $0,1403
+INCML $0,3
+JMP L21
+L20
+SET $2,$253
+SETL $1,24
+SET $0,$1
+ADD $1,$2,$0
+LDO $0,$1,0
+SET $1,$0
+SETL $0,45
+SET $2,$0
+CMP $0,$1,$2
+ZSZ $0,$0,1
+BP $0,L16
+L68
+JMP L17
+L16
+SET $2,$253
+SETL $0,8
+SET $1,$0
+ADD $0,$2,$1
+SET $1,$0
+SETL $0,1
+SET $2,$0
+STO $2, $1,0
+SET $3,$253
+SETL $0,24
+SET $1,$0
+ADD $2,$3,$1
+SET $0,$2
+SETL $0,48
+SET $1,$0
+STO $1, $0,0
+SETL $0,1403
+INCML $0,3
+JMP L18
+L17
+SET $2,$253
+SETL $0,24
+SET $1,$0
+ADD $0,$2,$1
+LDO $1,$0,0
+SET $0,$1
+SETL $1,48
+SET $2,$1
+CMP $1,$0,$2
+ZSN $1,$1,1
+SET $2,$1
+SET $3,$253
+SETL $0,24
+SET $1,$0
+ADD $0,$3,$1
+LDO $1,$0,0
+SET $3,$1
+SETL $0,57
+SET $1,$0
+CMP $0,$3,$1
+ZSP $0,$0,1
+SET $1,$0
+OR $0,$2,$1
+BP $0,L13
+L69
+JMP L14
+L13
+SETL $0,1984
+STO $0,$254,0
+PUSHJ _exit
+LDO $0,$254,0
+JMP L15
+L14
+SETL $0,1984
+L15
+L18
+L21
+L23
+SETL $0,48
+SET $2,$0
+SET $3,$253
+SETL $0,24
+SET $1,$0
+ADD $0,$3,$1
+LDO $1,$0,0
+SET $0,$1
+CMP $1,$2,$0
+ZSNP $1,$1,1
+SET $0,$1
+SET $2,$253
+SETL $1,24
+SET $4,$1
+ADD $3,$2,$4
+LDO $1,$3,0
+SET $2,$1
+SETL $1,57
+SET $3,$1
+CMP $4,$2,$3
+ZSNP $4,$4,1
+SET $1,$4
+AND $2,$0,$1
+BP $2,L22
+L70
+JMP L24
+L22
+SET $0,$253
+SETL $1,16
+SET $2,$1
+ADD $1,$0,$2
+SET $0,$1
+SET $1,$253
+SETL $0,16
+SET $2,$0
+ADD $0,$1,$2
+LDO $2,$0,0
+SET $1,$2
+SETL $0,10
+SET $2,$0
+MUL $0,$1,$2
+SET $1,$0
+SET $3,$253
+SETL $0,24
+SET $2,$0
+ADD $0,$3,$2
+LDO $3,$0,0
+SET $2,$3
+SETL $0,48
+SET $3,$0
+SUB $0,$2,$3
+SET $2,$0
+ADD $0,$1,$2
+SET $1,$0
+STO $1, $0,0
+SET $2,$253
+SETL $1,24
+SET $0,$1
+ADD $1,$2,$0
+SET $2,$1
+SETL $0,1984
+SET $1,$0
+STO $1,$254,0
+PUSHJ _getChar
+LDO $0,$254,0
+SET $1,$0
+SET $0,$1
+STO $0, $2,0
+SETL $0,1403
+INCML $0,3
+JMP L23
+L24
+SET $2,$253
+SETL $0,24
+SET $3,$0
+ADD $1,$2,$3
+LDO $0,$1,0
+SET $3,$0
+SETL $0,10
+SET $1,$0
+SETL $2,256
+SET $0,$2
+DIV $2,$1,$0
+GET $2,6
+SET $1,$2
+CMP $0,$3,$1
+ZSNZ $0,$0,1
+BP $0,L25
+L71
+JMP L26
+L25
+SETL $0,1984
+STO $0,$254,0
+PUSHJ _exit
+LDO $0,$254,0
+JMP L27
+L26
+SETL $0,1984
+L27
+SET $0,$253
+SETL $1,8
+SET $2,$1
+ADD $1,$0,$2
+LDO $0,$1,0
+SET $3,$0
+SET $0,$253
+SETL $2,16
+SET $1,$2
+ADD $2,$0,$1
+LDO $0,$2,0
+SET $1,$0
+MUL $0,$3,$1
+SET $1,$0
+SET $0,$1
+JMP L66
+L66
+STO $0,FP,0
+SETL $0,40
+INCML $0,40
+SUB $0,FP,$0
+LDO 4,$0,0
+SET SP,FP
+SETL $0,32
+INCML $0,32
+SUB $0,SP,$0
+LDO FP,$0,0
+POP 5,0
+
+_putString
+% start prlogue
+SETL $0,16
+INCML $0,16
+SUB $0,SP,$0
+STO FP,$0,0
+SET FP,SP
+SETL $0,40
+INCML $0,40
+SUB SP,SP,$0
+SETL $0,0
+STO rJ,FP,0
+JMP L72
+L72
+SET $0,$253
+SETL $2,8
+SET $1,$2
+ADD $2,$0,$1
+SET $1,$2
+SETL $1,0
+SET $0,$1
+STO $0, $1,0
+L29
+SET $0,$253
+SETL $2,8
+SET $1,$2
+ADD $2,$0,$1
+LDO $0,$2,0
+SET $2,$0
+SET $0,$253
+SETL $1,8
+SET $3,$1
+ADD $1,$0,$3
+LDO $0,$1,0
+SET $1,$0
+SETL $0,8
+SET $3,$0
+MUL $0,$1,$3
+SET $1,$0
+ADD $0,$2,$1
+LDO $1,$0,0
+SET $0,$1
+SETL $2,0
+SET $1,$2
+SETL $3,256
+SET $2,$3
+DIV $3,$1,$2
+GET $3,6
+SET $2,$3
+CMP $1,$0,$2
+ZSNZ $1,$1,1
+BP $1,L28
+L74
+JMP L30
+L28
+SET $0,$253
+SETL $1,8
+SET $2,$1
+ADD $1,$0,$2
+LDO $0,$1,0
+SET $1,$0
+SET $3,$253
+SETL $2,8
+SET $0,$2
+ADD $2,$3,$0
+LDO $0,$2,0
+SET $2,$0
+SETL $0,8
+SET $3,$0
+MUL $0,$2,$3
+SET $2,$0
+SETL $0,1984
+STO $0,$254,0
+ADD $0,$1,$2
+LDO $1,$0,0
+STO $1,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+SET $2,$253
+SETL $1,8
+SET $0,$1
+ADD $3,$2,$0
+SET $1,$3
+SET $2,$253
+SETL $1,8
+SET $0,$1
+ADD $3,$2,$0
+LDO $1,$3,0
+SET $0,$1
+SETL $1,1
+SET $2,$1
+ADD $1,$0,$2
+SET $0,$1
+STO $0, $1,0
+SETL $0,1403
+INCML $0,3
+JMP L29
+L30
+SETL $0,1984
+SET $1,$0
+SET $0,$1
+JMP L73
+L73
+STO $0,FP,0
+SETL $0,24
+INCML $0,24
+SUB $0,FP,$0
+LDO 4,$0,0
+SET SP,FP
+SETL $0,16
+INCML $0,16
+SUB $0,SP,$0
+LDO FP,$0,0
+POP 5,0
+
+L2
+% start prlogue
+SETL $0,48
+INCML $0,48
+SUB $0,SP,$0
+STO FP,$0,0
+SET FP,SP
+SETL $0,80
+INCML $0,80
+SUB SP,SP,$0
+SETL $0,32
+INCML $0,32
+STO rJ,FP,0
+JMP L75
+L75
+SET $0,$253
+SETL $2,8
+SET $1,$2
+ADD $2,$0,$1
+LDO $0,$2,0
+SET $1,$0
+LDO $0,$253,0
+SET $2,$0
+SETL $0,8
+SET $3,$0
+ADD $0,$2,$3
+LDO $2,$0,0
+SET $3,$2
+CMP $0,$1,$3
+ZSZ $0,$0,1
+BP $0,L49
+L77
+JMP L50
+L49
+SETL $0,1984
+STO $0,$254,0
+LDA $0,L3
+STO $0,$254,8
+PUSHJ _putString
+LDO $0,$254,0
+SETL $0,10
+SET $1,$0
+SETL $0,256
+SET $2,$0
+SETL $0,1984
+STO $0,$254,0
+DIV $0,$1,$2
+GET $0,6
+STO $0,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+SET $0,$253
+SETL $1,24
+SET $2,$1
+ADD $1,$0,$2
+SET $0,$1
+SETL $0,0
+SET $1,$0
+STO $1, $0,0
+L38
+SET $2,$253
+SETL $1,24
+SET $0,$1
+ADD $1,$2,$0
+LDO $0,$1,0
+SET $3,$0
+LDO $0,$253,0
+SET $1,$0
+SETL $0,8
+SET $2,$0
+ADD $0,$1,$2
+LDO $1,$0,0
+SET $0,$1
+CMP $1,$3,$0
+ZSN $1,$1,1
+BP $1,L37
+L78
+JMP L39
+L37
+SET $2,$253
+SETL $0,8
+SET $1,$0
+ADD $0,$2,$1
+SET $1,$0
+SETL $0,0
+SET $2,$0
+STO $2, $1,0
+L35
+SET $2,$253
+SETL $1,8
+SET $0,$1
+ADD $1,$2,$0
+LDO $0,$1,0
+SET $3,$0
+LDO $1,$253,0
+SET $0,$1
+SETL $1,8
+SET $2,$1
+ADD $1,$0,$2
+LDO $0,$1,0
+SET $1,$0
+CMP $0,$3,$1
+ZSN $0,$0,1
+BP $0,L34
+L79
+JMP L36
+L34
+LDO $0,$253,0
+SET $1,$0
+SETL $0,264
+SET $2,$0
+ADD $0,$1,$2
+SET $3,$0
+SET $0,$253
+SETL $2,8
+SET $1,$2
+ADD $2,$0,$1
+LDO $0,$2,0
+SET $2,$0
+SETL $0,8
+SET $1,$0
+MUL $0,$2,$1
+SET $1,$0
+ADD $2,$3,$1
+LDO $0,$2,0
+SET $3,$0
+SET $0,$253
+SETL $2,24
+SET $1,$2
+ADD $2,$0,$1
+LDO $0,$2,0
+SET $1,$0
+CMP $0,$3,$1
+ZSZ $0,$0,1
+BP $0,L31
+L80
+JMP L32
+L31
+SET $2,$253
+SETL $1,8
+SET $0,$1
+ADD $1,$2,$0
+SET $0,$1
+SETL $0,79
+SET $1,$0
+STO $1, $0,0
+JMP L33
+L32
+SET $2,$253
+SETL $0,8
+SET $1,$0
+ADD $0,$2,$1
+SET $1,$0
+SETL $1,46
+SET $0,$1
+STO $0, $1,0
+L33
+SET $0,$253
+SETL $1,8
+SET $2,$1
+SETL $1,1984
+STO $1,$254,0
+ADD $1,$0,$2
+LDO $0,$1,0
+STO $0,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+SET $0,$253
+SETL $1,8
+SET $2,$1
+ADD $1,$0,$2
+SET $0,$1
+SET $2,$253
+SETL $1,8
+SET $0,$1
+ADD $1,$2,$0
+LDO $0,$1,0
+SET $2,$0
+SETL $0,1
+SET $1,$0
+ADD $0,$2,$1
+SET $1,$0
+STO $1, $0,0
+SETL $0,1403
+INCML $0,3
+JMP L35
+L36
+SETL $0,10
+SET $2,$0
+SETL $0,256
+SET $1,$0
+SETL $0,1984
+STO $0,$254,0
+DIV $0,$2,$1
+GET $0,6
+STO $0,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+SET $1,$253
+SETL $0,24
+SET $2,$0
+ADD $0,$1,$2
+SET $1,$0
+SET $2,$253
+SETL $0,24
+SET $1,$0
+ADD $0,$2,$1
+LDO $1,$0,0
+SET $0,$1
+SETL $2,1
+SET $1,$2
+ADD $2,$0,$1
+SET $0,$2
+STO $0, $1,0
+SETL $0,1403
+INCML $0,3
+JMP L38
+L39
+SETL $0,10
+SET $2,$0
+SETL $0,256
+SET $1,$0
+SETL $0,1984
+STO $0,$254,0
+DIV $0,$2,$1
+GET $0,6
+STO $0,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+SET $0,$253
+SETL $2,40
+SET $1,$2
+ADD $2,$0,$1
+SET $1,$2
+SETL $1,1
+SET $0,$1
+STO $0, $1,0
+SETL $0,1403
+INCML $0,3
+JMP L51
+L50
+SET $2,$253
+SETL $0,40
+SET $1,$0
+ADD $0,$2,$1
+SET $1,$0
+SETL $0,0
+SET $2,$0
+STO $2, $1,0
+SET $1,$253
+SETL $0,24
+SET $2,$0
+ADD $0,$1,$2
+SET $1,$0
+SETL $1,0
+SET $0,$1
+STO $0, $1,0
+L47
+SET $2,$253
+SETL $0,24
+SET $1,$0
+ADD $0,$2,$1
+LDO $1,$0,0
+SET $2,$1
+LDO $0,$253,0
+SET $1,$0
+SETL $3,8
+SET $0,$3
+ADD $3,$1,$0
+LDO $1,$3,0
+SET $0,$1
+CMP $1,$2,$0
+ZSN $1,$1,1
+BP $1,L46
+L81
+JMP L48
+L46
+LDO $0,$253,0
+SET $1,$0
+SETL $2,264
+SET $0,$2
+ADD $3,$1,$0
+SET $2,$3
+SET $0,$253
+SETL $1,8
+SET $3,$1
+ADD $1,$0,$3
+LDO $0,$1,0
+SET $3,$0
+SETL $1,8
+SET $0,$1
+MUL $1,$3,$0
+SET $0,$1
+ADD $1,$2,$0
+SET $0,$1
+SET $0,$253
+SETL $1,24
+SET $2,$1
+ADD $1,$0,$2
+LDO $0,$1,0
+SET $1,$0
+STO $1, $0,0
+SET $1,$253
+SETL $0,32
+SET $2,$0
+ADD $0,$1,$2
+SET $1,$0
+SETL $1,1
+SET $0,$1
+STO $0, $1,0
+SET $2,$253
+SETL $1,16
+SET $0,$1
+ADD $1,$2,$0
+SET $0,$1
+SETL $0,0
+SET $1,$0
+STO $1, $0,0
+L41
+SET $1,$253
+SETL $2,16
+SET $0,$2
+ADD $2,$1,$0
+LDO $0,$2,0
+SET $2,$0
+SET $3,$253
+SETL $0,8
+SET $1,$0
+ADD $0,$3,$1
+LDO $1,$0,0
+SET $0,$1
+CMP $1,$2,$0
+ZSN $1,$1,1
+BP $1,L40
+L82
+JMP L42
+L40
+SET $1,$253
+SETL $0,32
+SET $2,$0
+ADD $0,$1,$2
+SET $1,$0
+SET $1,$253
+SETL $0,32
+SET $2,$0
+ADD $0,$1,$2
+LDO $1,$0,0
+SET $2,$1
+LDO $0,$253,0
+SET $1,$0
+SETL $0,264
+SET $3,$0
+ADD $0,$1,$3
+SET $3,$0
+SET $0,$253
+SETL $1,16
+SET $4,$1
+ADD $1,$0,$4
+LDO $0,$1,0
+SET $1,$0
+SETL $0,8
+SET $4,$0
+MUL $0,$1,$4
+SET $1,$0
+ADD $0,$3,$1
+LDO $3,$0,0
+SET $1,$3
+LDO $0,$253,0
+SET $4,$0
+SETL $0,264
+SET $3,$0
+ADD $0,$4,$3
+SET $3,$0
+SET $0,-24
+STO $3,$253,$0
+SET $3,$253
+SETL $4,8
+SET $0,$4
+ADD $4,$3,$0
+LDO $3,$4,0
+SET $0,$3
+SETL $3,8
+SET $4,$3
+MUL $3,$0,$4
+SET $4,$3
+SET $3,-24
+LDO $0,$253,$3
+ADD $3,$0,$4
+LDO $0,$3,0
+SET $3,$0
+CMP $0,$1,$3
+ZSNZ $0,$0,1
+SET $1,$0
+AND $3,$2,$1
+SET $0,$3
+STO $0, $1,0
+SET $1,$253
+SETL $0,32
+SET $2,$0
+ADD $0,$1,$2
+SET $1,$0
+SET $2,$253
+SETL $1,32
+SET $0,$1
+ADD $1,$2,$0
+LDO $0,$1,0
+SET $1,$0
+SET $0,-24
+STO $1,$253,$0
+LDO $1,$253,0
+SET $0,$1
+SETL $2,264
+SET $1,$2
+ADD $2,$0,$1
+SET $1,$2
+SET $3,$253
+SETL $2,16
+SET $0,$2
+ADD $2,$3,$0
+LDO $0,$2,0
+SET $3,$0
+SETL $0,8
+SET $2,$0
+MUL $0,$3,$2
+SET $2,$0
+ADD $0,$1,$2
+LDO $1,$0,0
+SET $0,$1
+LDO $1,$253,0
+SET $2,$1
+SETL $1,264
+SET $3,$1
+ADD $1,$2,$3
+SET $3,$1
+SET $1,$253
+SETL $2,8
+SET $4,$2
+ADD $2,$1,$4
+LDO $1,$2,0
+SET $4,$1
+SETL $2,8
+SET $1,$2
+MUL $2,$4,$1
+SET $1,$2
+ADD $2,$3,$1
+LDO $1,$2,0
+SET $2,$1
+SUB $1,$0,$2
+SET $0,$1
+SET $1,$253
+SETL $2,16
+SET $3,$2
+ADD $2,$1,$3
+LDO $1,$2,0
+SET $2,$1
+SET $1,$253
+SETL $3,8
+SET $4,$3
+ADD $3,$1,$4
+LDO $1,$3,0
+SET $4,$1
+SUB $3,$2,$4
+SET $1,$3
+CMP $2,$0,$1
+ZSNZ $2,$2,1
+SET $3,$2
+SET $0,-24
+LDO $1,$253,$0
+AND $2,$1,$3
+SET $0,$2
+STO $0, $1,0
+SET $0,$253
+SETL $2,32
+SET $1,$2
+ADD $2,$0,$1
+SET $0,$2
+SET $2,$253
+SETL $1,32
+SET $0,$1
+ADD $1,$2,$0
+LDO $0,$1,0
+SET $1,$0
+SET $0,-24
+STO $1,$253,$0
+LDO $0,$253,0
+SET $2,$0
+SETL $1,264
+SET $0,$1
+ADD $1,$2,$0
+SET $2,$1
+SET $0,$253
+SETL $1,16
+SET $3,$1
+ADD $1,$0,$3
+LDO $0,$1,0
+SET $1,$0
+SETL $3,8
+SET $0,$3
+MUL $3,$1,$0
+SET $0,$3
+ADD $1,$2,$0
+LDO $0,$1,0
+SET $2,$0
+LDO $0,$253,0
+SET $1,$0
+SETL $0,264
+SET $3,$0
+ADD $0,$1,$3
+SET $3,$0
+SET $4,$253
+SETL $0,8
+SET $1,$0
+ADD $0,$4,$1
+LDO $1,$0,0
+SET $0,$1
+SETL $1,8
+SET $4,$1
+MUL $1,$0,$4
+SET $0,$1
+ADD $1,$3,$0
+LDO $0,$1,0
+SET $1,$0
+SUB $0,$2,$1
+SET $2,$0
+SET $0,$253
+SETL $1,8
+SET $3,$1
+ADD $1,$0,$3
+LDO $0,$1,0
+SET $3,$0
+SET $4,$253
+SETL $1,16
+SET $0,$1
+ADD $1,$4,$0
+LDO $0,$1,0
+SET $4,$0
+SUB $1,$3,$4
+SET $0,$1
+CMP $1,$2,$0
+ZSNZ $1,$1,1
+SET $0,$1
+SET $1,-24
+LDO $2,$253,$1
+AND $1,$2,$0
+SET $2,$1
+STO $2, $0,0
+SET $2,$253
+SETL $0,16
+SET $1,$0
+ADD $0,$2,$1
+SET $1,$0
+SET $0,$253
+SETL $2,16
+SET $1,$2
+ADD $2,$0,$1
+LDO $0,$2,0
+SET $3,$0
+SETL $0,1
+SET $2,$0
+ADD $1,$3,$2
+SET $0,$1
+STO $0, $1,0
+SETL $0,1403
+INCML $0,3
+JMP L41
+L42
+SETL $0,1403
+INCML $0,3
+SET $3,$253
+SETL $0,32
+SET $1,$0
+ADD $2,$3,$1
+LDO $0,$2,0
+BP $0,L43
+L83
+JMP L44
+L43
+SET $0,$253
+SETL $1,40
+SET $2,$1
+ADD $1,$0,$2
+SET $0,$1
+SET $0,$253
+SETL $1,40
+SET $2,$1
+ADD $1,$0,$2
+LDO $2,$1,0
+SET $0,$2
+LDO $0,$253,0
+SET $2,$0
+SET $3,$253
+SETL $1,8
+SET $0,$1
+ADD $1,$3,$0
+LDO $0,$1,0
+SET $1,$0
+SETL $3,1
+SET $0,$3
+ADD $3,$1,$0
+SET $0,$3
+STO $2,$254,0
+STO $0,$254,8
+PUSHJ L2
+LDO $2,$254,0
+SET $1,$2
+SET $2,$1
+ADD $1,$0,$2
+SET $2,$1
+STO $2, $0,0
+JMP L45
+L44
+SETL $0,1984
+L45
+SET $1,$253
+SETL $2,24
+SET $0,$2
+ADD $2,$1,$0
+SET $0,$2
+SET $2,$253
+SETL $0,24
+SET $1,$0
+ADD $3,$2,$1
+LDO $0,$3,0
+SET $1,$0
+SETL $0,1
+SET $2,$0
+ADD $0,$1,$2
+SET $1,$0
+STO $1, $0,0
+SETL $0,1403
+INCML $0,3
+JMP L47
+L48
+SETL $0,1403
+INCML $0,3
+L51
+SET $1,$253
+SETL $0,40
+SET $2,$0
+ADD $0,$1,$2
+LDO $1,$0,0
+SET $0,$1
+SET $1,$0
+JMP L76
+L76
+STO $1,FP,0
+SETL $0,56
+INCML $0,56
+SUB $0,FP,$0
+LDO 4,$0,0
+SET SP,FP
+SETL $0,48
+INCML $0,48
+SUB $0,SP,$0
+LDO FP,$0,0
+POP 5,0
+
+_main
+% start prlogue
+SETL $0,272
+INCML $0,272
+SUB $0,SP,$0
+STO FP,$0,0
+SET FP,SP
+SETL $0,296
+INCML $0,296
+SUB SP,SP,$0
+SETL $0,256
+INCML $0,256
+STO rJ,FP,0
+JMP L84
+L84
+SET $0,$253
+SETL $1,8
+SET $2,$1
+ADD $1,$0,$2
+SET $0,$1
+SETL $0,8
+SET $1,$0
+STO $1, $0,0
+SET $0,$253
+SETL $1,8
+SET $2,$1
+ADD $1,$0,$2
+SET $0,$1
+SET $1,$253
+SETL $0,0
+SET $2,$0
+STO $1,$254,0
+STO $2,$254,8
+PUSHJ L2
+LDO $1,$254,0
+SET $0,$1
+SET $1,$0
+STO $1, $0,0
+SETL $0,1984
+STO $0,$254,0
+LDA $0,L1
+STO $0,$254,8
+PUSHJ _putString
+LDO $0,$254,0
+SET $1,$253
+SETL $0,8
+SET $3,$0
+SETL $0,1984
+STO $0,$254,0
+ADD $2,$1,$3
+LDO $0,$2,0
+STO $0,$254,8
+PUSHJ _putInteger
+LDO $0,$254,0
+SETL $0,10
+SET $2,$0
+SETL $0,256
+SET $1,$0
+SETL $0,1984
+STO $0,$254,0
+DIV $0,$2,$1
+GET $0,6
+STO $0,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+SETL $1,10
+SET $0,$1
+SETL $2,256
+SET $1,$2
+SETL $2,1984
+STO $2,$254,0
+DIV $2,$0,$1
+GET $2,6
+STO $2,$254,8
+PUSHJ _putChar
+LDO $0,$254,0
+SETL $0,0
+SET $1,$0
+SET $0,$1
+JMP L85
+L85
+STO $0,FP,0
+SETL $0,280
+INCML $0,280
+SUB $0,FP,$0
+LDO 4,$0,0
+SET SP,FP
+SETL $0,272
+INCML $0,272
+SUB $0,SP,$0
+LDO FP,$0,0
+POP 5,0
+
+:-) Done.

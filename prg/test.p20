@@ -1,0 +1,6 @@
+fun main(c : integer) : void = {
+  c=4;
+  i[1] = 5+c;
+}
+
+var i : [10]integer

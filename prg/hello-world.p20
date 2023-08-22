@@ -1,0 +1,39 @@
+fun putChar(c:char):void = none
+fun getChar():char = (0:char)
+fun putInteger(i:integer):void =
+    {
+      if (i<0) then { putChar('-'); i=-i; } else none;
+      if (i==0) then putChar('0') else put(i);
+    }
+    where
+    {
+      fun put(i:integer):void =
+          {
+            if (i==0) then none else {
+              putChar('a');
+              put(i/10);
+              putChar(((i%10+('0':integer)):char));
+            };
+          }
+    }
+
+fun putString(s:^char):void =
+    {
+      i=0;
+      
+      while (((s:integer)+(i*8):^char)^!=(0:char)) do {
+        putChar(((s:integer)+(i*8):^char)^);
+        i=i+1;
+      };
+      none;
+    }
+    where {
+      var i:integer
+    }
+
+fun main():integer =
+    { 
+     
+      putString("Hello, world.");
+      putChar((10:char));
+      0; }

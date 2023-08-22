@@ -1,0 +1,9 @@
+S returns [int p]
+    : A { $p = $A.p*100; }
+    | B { $p = $B.p*200; }
+    ;
+
+decls : decl decl*;
+decls 
+	returns [AstTrees<AstDecl> ast]
+	: { Vector<AstDecl> ds = new Vector<AstDecl>(); } decl {..} decl* { $ast = new AstTrees<AstDecl> (ds) ; }

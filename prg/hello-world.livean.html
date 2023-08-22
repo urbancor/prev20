@@ -1,0 +1,3472 @@
+<html>
+<style>
+      table, tr, td {
+      text-align: center;
+      vertical-align: top;
+      }
+    </style>
+<body><table>
+<td bgcolor="FFEE00"><table>
+<tr><td bgcolor="EECF00"><table width="100%">
+<tr><td><nobr>
+	  FRAME
+	  label=<font style="font-family:courier new">_putChar</font></nobr></td></tr>
+<tr><td><nobr>
+	  depth=1 
+	  size=16 
+	  locs=0
+	  args=0</nobr></td></tr>
+<tr><td><nobr>
+    	  FP=T0
+	  RV=T1</nobr></td></tr>
+</table></td></tr>
+<tr><td bgcolor="EECF00"><nobr>
+	    entryLabel=L14
+	    exitLabel=L15
+	    temps=0</nobr></td></tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L14</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T91,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T91</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T91</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T12,T91</td>
+<tr bgcolor="00DDFF"><td>use:
+       T91</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T12</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T91</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T12</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T1,T12</td>
+<tr bgcolor="00DDFF"><td>use:
+       T12</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T1</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T12</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T1</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L15</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T1</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T1</td></tr>
+</tr>
+</table></td>
+<td bgcolor="FFEE00"><table>
+<tr><td bgcolor="EECF00"><table width="100%">
+<tr><td><nobr>
+	  FRAME
+	  label=<font style="font-family:courier new">_getChar</font></nobr></td></tr>
+<tr><td><nobr>
+	  depth=1 
+	  size=16 
+	  locs=0
+	  args=0</nobr></td></tr>
+<tr><td><nobr>
+    	  FP=T2
+	  RV=T3</nobr></td></tr>
+</table></td></tr>
+<tr><td bgcolor="EECF00"><nobr>
+	    entryLabel=L16
+	    exitLabel=L17
+	    temps=0</nobr></td></tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L16</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T92,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T92</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T92</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T13,T92</td>
+<tr bgcolor="00DDFF"><td>use:
+       T92</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T13</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T92</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T13</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T93,256</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T93</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T13</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T93 T13</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T14,T93</td>
+<tr bgcolor="00DDFF"><td>use:
+       T93</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T14</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T93 T13</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T14 T13</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">DIV T94,T13,T14</td>
+<tr bgcolor="00DDFF"><td>use:
+       T13 T14</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T94</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T14 T13</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">GET T94,rR</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T94</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T94</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T15,T94</td>
+<tr bgcolor="00DDFF"><td>use:
+       T94</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T15</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T94</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T15</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T3,T15</td>
+<tr bgcolor="00DDFF"><td>use:
+       T15</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T3</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T15</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T3</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L17</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T3</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T3</td></tr>
+</tr>
+</table></td>
+<td bgcolor="FFEE00"><table>
+<tr><td bgcolor="EECF00"><table width="100%">
+<tr><td><nobr>
+	  FRAME
+	  label=<font style="font-family:courier new">L0</font></nobr></td></tr>
+<tr><td><nobr>
+	  depth=2 
+	  size=32 
+	  locs=0
+	  args=16</nobr></td></tr>
+<tr><td><nobr>
+    	  FP=T4
+	  RV=T5</nobr></td></tr>
+</table></td></tr>
+<tr><td bgcolor="EECF00"><nobr>
+	    entryLabel=L18
+	    exitLabel=L19
+	    temps=0</nobr></td></tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L18</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T16,T4</td>
+<tr bgcolor="00DDFF"><td>use:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T16</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T16 T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T95,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T95</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T16 T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T16 T4 T95</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T17,T95</td>
+<tr bgcolor="00DDFF"><td>use:
+       T95</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T17</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T16 T4 T95</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T16 T4 T17</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T96,T16,T17</td>
+<tr bgcolor="00DDFF"><td>use:
+       T16 T17</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T96</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T16 T4 T17</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T96</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T97,T96,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T96</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T97</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T96</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T97 T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T18,T97</td>
+<tr bgcolor="00DDFF"><td>use:
+       T97</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T18</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T97 T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T18</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T98,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T98</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T18</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T98 T18</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T19,T98</td>
+<tr bgcolor="00DDFF"><td>use:
+       T98</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T19</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T98 T18</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T18 T19</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">CMP T99,T18,T19</td>
+<tr bgcolor="00DDFF"><td>use:
+       T18 T19</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T99</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T18 T19</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T99 T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ZSZ T99,T99,1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T99</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T99</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T99 T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T99 T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">BP T99,L2</td>
+<tr bgcolor="00DDFF"><td>use:
+       T99</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T99 T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L20</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L3</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L2</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T100,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T100</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L4</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L3</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T101,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T101</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T101</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T101,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T101</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T101</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T102,97</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T102</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T102</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T102,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T102</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T102</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ $6,_putChar</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T103,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T103</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T20,T4</td>
+<tr bgcolor="00DDFF"><td>use:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T20</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T20</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T104,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T104</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T20</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T20 T104</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T21,T104</td>
+<tr bgcolor="00DDFF"><td>use:
+       T104</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T21</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T20 T104</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T21 T20</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T105,T20,T21</td>
+<tr bgcolor="00DDFF"><td>use:
+       T20 T21</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T105</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T21 T20</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T105</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T106,T105,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T105</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T106</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T105</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T106</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T22,T106</td>
+<tr bgcolor="00DDFF"><td>use:
+       T106</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T22</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T106</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T107,10</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T107</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T22 T107</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T23,T107</td>
+<tr bgcolor="00DDFF"><td>use:
+       T107</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T23</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T22 T107</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T23 T4 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T108,T4,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T108</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T23 T4 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T23 T4 T108 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T108,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T108</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T23 T4 T108 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T23 T4 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">DIV T109,T22,T23</td>
+<tr bgcolor="00DDFF"><td>use:
+       T22 T23</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T109</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T23 T4 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T109</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T109,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T109</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T109</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ $6,L0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T110,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T110</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T111,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T111</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T111</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T24,T111</td>
+<tr bgcolor="00DDFF"><td>use:
+       T111</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T24</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T111</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T4 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T25,T4</td>
+<tr bgcolor="00DDFF"><td>use:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T25</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T4 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T25 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T112,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T112</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T25 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T25 T112 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T26,T112</td>
+<tr bgcolor="00DDFF"><td>use:
+       T112</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T26</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T25 T112 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T25 T26 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T113,T25,T26</td>
+<tr bgcolor="00DDFF"><td>use:
+       T25 T26</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T113</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T25 T26 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T24 T113</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T114,T113,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T113</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T114</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T24 T113</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T114 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T27,T114</td>
+<tr bgcolor="00DDFF"><td>use:
+       T114</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T27</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T114 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T27 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T115,10</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T115</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T27 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T27 T24 T115</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T28,T115</td>
+<tr bgcolor="00DDFF"><td>use:
+       T115</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T28</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T27 T24 T115</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T27 T28 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">DIV T116,T27,T28</td>
+<tr bgcolor="00DDFF"><td>use:
+       T27 T28</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T116</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T27 T28 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">GET T116,rR</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T116</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T24 T116</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T29,T116</td>
+<tr bgcolor="00DDFF"><td>use:
+       T116</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T29</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T24 T116</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T29 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T117,48</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T117</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T29 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T29 T24 T117</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T30,T117</td>
+<tr bgcolor="00DDFF"><td>use:
+       T117</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T30</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T29 T24 T117</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T29 T30 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T118,T29,T30</td>
+<tr bgcolor="00DDFF"><td>use:
+       T29 T30</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T118</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T29 T30 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T118 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T31,T118</td>
+<tr bgcolor="00DDFF"><td>use:
+       T118</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T31</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T118 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T31 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T119,256</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T119</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T31 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T119 T31 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T32,T119</td>
+<tr bgcolor="00DDFF"><td>use:
+       T119</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T32</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T119 T31 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T32 T31 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">DIV T120,T31,T32</td>
+<tr bgcolor="00DDFF"><td>use:
+       T31 T32</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T120</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T32 T31 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">GET T120,rR</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T120</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T120 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T33,T120</td>
+<tr bgcolor="00DDFF"><td>use:
+       T120</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T33</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T120 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T33 T24</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T24,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T24</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T33 T24</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T33</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T33,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T33</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T33</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ $6,_putChar</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T121,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T121</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T121</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T34,T121</td>
+<tr bgcolor="00DDFF"><td>use:
+       T121</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T34</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T121</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L4</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T122,1403</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T122</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T122</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">INCML T122,3</td>
+<tr bgcolor="00DDFF"><td>use:
+       T122</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T122</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T122</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T122</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T35,T122</td>
+<tr bgcolor="00DDFF"><td>use:
+       T122</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T35</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T122</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T35</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T5,T35</td>
+<tr bgcolor="00DDFF"><td>use:
+       T35</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T5</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T35</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T5</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L19</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T5</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T5</td></tr>
+</tr>
+</table></td>
+<td bgcolor="FFEE00"><table>
+<tr><td bgcolor="EECF00"><table width="100%">
+<tr><td><nobr>
+	  FRAME
+	  label=<font style="font-family:courier new">_putInteger</font></nobr></td></tr>
+<tr><td><nobr>
+	  depth=1 
+	  size=32 
+	  locs=0
+	  args=16</nobr></td></tr>
+<tr><td><nobr>
+    	  FP=T6
+	  RV=T7</nobr></td></tr>
+</table></td></tr>
+<tr><td bgcolor="EECF00"><nobr>
+	    entryLabel=L21
+	    exitLabel=L22
+	    temps=0</nobr></td></tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L21</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T36,T6</td>
+<tr bgcolor="00DDFF"><td>use:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T36</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T36 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T123,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T123</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T36 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T123 T36 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T37,T123</td>
+<tr bgcolor="00DDFF"><td>use:
+       T123</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T37</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T123 T36 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T36 T37 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T124,T36,T37</td>
+<tr bgcolor="00DDFF"><td>use:
+       T36 T37</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T124</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T36 T37 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T124 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T125,T124,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T124</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T125</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T124 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T125 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T38,T125</td>
+<tr bgcolor="00DDFF"><td>use:
+       T125</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T38</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T125 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T38 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T126,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T126</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T38 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T38 T126 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T39,T126</td>
+<tr bgcolor="00DDFF"><td>use:
+       T126</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T39</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T38 T126 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T38 T39 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">CMP T127,T38,T39</td>
+<tr bgcolor="00DDFF"><td>use:
+       T38 T39</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T127</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T38 T39 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T127</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ZSN T127,T127,1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T127</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T127</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T127</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T127</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">BP T127,L5</td>
+<tr bgcolor="00DDFF"><td>use:
+       T127</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T127</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L23</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L6</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L5</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T128,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T128</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T128 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T128,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T128</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T128 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T129,45</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T129</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T129 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T129,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T129</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T129 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ $6,_putChar</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T130,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T130</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T40,T6</td>
+<tr bgcolor="00DDFF"><td>use:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T40</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T40</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T131,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T131</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T40</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T131 T40</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T41,T131</td>
+<tr bgcolor="00DDFF"><td>use:
+       T131</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T41</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T131 T40</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T41 T6 T40</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T132,T40,T41</td>
+<tr bgcolor="00DDFF"><td>use:
+       T40 T41</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T132</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T41 T6 T40</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T132 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T42,T132</td>
+<tr bgcolor="00DDFF"><td>use:
+       T132</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T42</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T132 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T42</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T43,T6</td>
+<tr bgcolor="00DDFF"><td>use:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T43</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T42</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T43 T6 T42</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T133,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T133</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T43 T6 T42</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T43 T6 T133 T42</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T44,T133</td>
+<tr bgcolor="00DDFF"><td>use:
+       T133</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T44</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T43 T6 T133 T42</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T44 T43 T6 T42</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T134,T43,T44</td>
+<tr bgcolor="00DDFF"><td>use:
+       T43 T44</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T134</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T44 T43 T6 T42</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T134 T42</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T135,T134,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T134</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T135</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T134 T42</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T135 T42</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">NEG T135,0,T135</td>
+<tr bgcolor="00DDFF"><td>use:
+       T135</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T135</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T135 T42</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T135 T42</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T45,T135</td>
+<tr bgcolor="00DDFF"><td>use:
+       T135</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T45</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T135 T42</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T45 T6 T42</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T45,T42,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T45 T42</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T45 T6 T42</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T136,1403</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T136</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T136</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">INCML T136,3</td>
+<tr bgcolor="00DDFF"><td>use:
+       T136</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T136</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T136</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L7</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L6</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T137,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T137</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L7</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T46,T6</td>
+<tr bgcolor="00DDFF"><td>use:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T46</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T46 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T138,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T138</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T46 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T138 T46 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T47,T138</td>
+<tr bgcolor="00DDFF"><td>use:
+       T138</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T47</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T138 T46 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T47 T46 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T139,T46,T47</td>
+<tr bgcolor="00DDFF"><td>use:
+       T46 T47</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T139</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T47 T46 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T139 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T140,T139,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T139</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T140</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T139 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T140 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T48,T140</td>
+<tr bgcolor="00DDFF"><td>use:
+       T140</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T48</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T140 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T48</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T141,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T141</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T48</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T48 T141</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T49,T141</td>
+<tr bgcolor="00DDFF"><td>use:
+       T141</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T49</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T48 T141</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T49 T6 T48</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">CMP T142,T48,T49</td>
+<tr bgcolor="00DDFF"><td>use:
+       T48 T49</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T142</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T49 T6 T48</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T142 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ZSZ T142,T142,1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T142</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T142</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T142 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T142 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">BP T142,L8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T142</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T142 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L24</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L9</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T143,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T143</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T143</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T143,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T143</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T143</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T144,48</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T144</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T144 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T144,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T144</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T144 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ $6,_putChar</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T145,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T145</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L10</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L9</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T50,T6</td>
+<tr bgcolor="00DDFF"><td>use:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T50</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T6 T50</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T146,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T146</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T6 T50</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T146 T6 T50</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T51,T146</td>
+<tr bgcolor="00DDFF"><td>use:
+       T146</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T51</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T146 T6 T50</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T51 T6 T50</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T6,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T51 T6 T50</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T51 T50</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T147,T50,T51</td>
+<tr bgcolor="00DDFF"><td>use:
+       T50 T51</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T147</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T51 T50</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T147</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T148,T147,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T147</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T148</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T147</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T148</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T148,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T148</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T148</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ $6,L0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T149,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T149</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L10</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T150,1403</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T150</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T150</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">INCML T150,3</td>
+<tr bgcolor="00DDFF"><td>use:
+       T150</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T150</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T150</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T150</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T52,T150</td>
+<tr bgcolor="00DDFF"><td>use:
+       T150</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T52</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T150</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T52</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T7,T52</td>
+<tr bgcolor="00DDFF"><td>use:
+       T52</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T7</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T52</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T7</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L22</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T7</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T7</td></tr>
+</tr>
+</table></td>
+<td bgcolor="FFEE00"><table>
+<tr><td bgcolor="EECF00"><table width="100%">
+<tr><td><nobr>
+	  FRAME
+	  label=<font style="font-family:courier new">_putString</font></nobr></td></tr>
+<tr><td><nobr>
+	  depth=1 
+	  size=40 
+	  locs=8
+	  args=16</nobr></td></tr>
+<tr><td><nobr>
+    	  FP=T8
+	  RV=T9</nobr></td></tr>
+</table></td></tr>
+<tr><td bgcolor="EECF00"><nobr>
+	    entryLabel=L25
+	    exitLabel=L26
+	    temps=0</nobr></td></tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L25</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T53,T8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T53</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T53 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T151,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T151</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T53 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T151 T53 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">NEG T151,T151</td>
+<tr bgcolor="00DDFF"><td>use:
+       T151</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T151</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T151 T53 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T151 T53 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T54,T151</td>
+<tr bgcolor="00DDFF"><td>use:
+       T151</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T54</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T151 T53 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T53 T8 T54</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T152,T53,T54</td>
+<tr bgcolor="00DDFF"><td>use:
+       T53 T54</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T152</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T53 T8 T54</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T152</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T55,T152</td>
+<tr bgcolor="00DDFF"><td>use:
+       T152</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T55</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T152</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T55</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T153,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T153</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T55</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T153 T55</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T56,T153</td>
+<tr bgcolor="00DDFF"><td>use:
+       T153</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T56</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T153 T55</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T56 T55</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T56,T55,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T56 T55</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T56 T55</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L12</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T57,T8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T57</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T57 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T154,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T154</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T57 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T57 T8 T154</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T58,T154</td>
+<tr bgcolor="00DDFF"><td>use:
+       T154</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T58</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T57 T8 T154</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T57 T8 T58</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T155,T57,T58</td>
+<tr bgcolor="00DDFF"><td>use:
+       T57 T58</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T155</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T57 T8 T58</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T155</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T156,T155,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T155</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T156</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T155</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T156 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T59,T156</td>
+<tr bgcolor="00DDFF"><td>use:
+       T156</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T59</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T156 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T59</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T60,T8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T60</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T59</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T60 T8 T59</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T157,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T157</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T60 T8 T59</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T60 T8 T157 T59</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">NEG T157,T157</td>
+<tr bgcolor="00DDFF"><td>use:
+       T157</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T157</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T60 T8 T157 T59</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T60 T8 T157 T59</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T61,T157</td>
+<tr bgcolor="00DDFF"><td>use:
+       T157</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T61</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T60 T8 T157 T59</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T60 T8 T61 T59</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T158,T60,T61</td>
+<tr bgcolor="00DDFF"><td>use:
+       T60 T61</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T158</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T60 T8 T61 T59</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T59 T158</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T159,T158,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T158</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T159</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T59 T158</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T159 T8 T59</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T62,T159</td>
+<tr bgcolor="00DDFF"><td>use:
+       T159</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T62</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T159 T8 T59</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T59 T62</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T160,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T160</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T59 T62</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T160 T59 T62</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T63,T160</td>
+<tr bgcolor="00DDFF"><td>use:
+       T160</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T63</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T160 T59 T62</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T59 T62 T63</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">MUL T161,T62,T63</td>
+<tr bgcolor="00DDFF"><td>use:
+       T62 T63</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T161</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T59 T62 T63</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T161 T59</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T64,T161</td>
+<tr bgcolor="00DDFF"><td>use:
+       T161</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T64</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T161 T59</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T64 T59</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T162,T59,T64</td>
+<tr bgcolor="00DDFF"><td>use:
+       T59 T64</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T162</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T64 T59</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T162</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T163,T162,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T162</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T163</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T162</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T163 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T65,T163</td>
+<tr bgcolor="00DDFF"><td>use:
+       T163</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T65</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T163 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T65 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T164,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T164</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T65 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T65 T8 T164</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T66,T164</td>
+<tr bgcolor="00DDFF"><td>use:
+       T164</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T66</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T65 T8 T164</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T65 T8 T66</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T165,256</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T165</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T65 T8 T66</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T65 T8 T66 T165</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T67,T165</td>
+<tr bgcolor="00DDFF"><td>use:
+       T165</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T67</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T65 T8 T66 T165</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T67 T65 T8 T66</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">DIV T166,T66,T67</td>
+<tr bgcolor="00DDFF"><td>use:
+       T66 T67</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T166</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T67 T65 T8 T66</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T65 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">GET T166,rR</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T166</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T65 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T65 T8 T166</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T68,T166</td>
+<tr bgcolor="00DDFF"><td>use:
+       T166</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T68</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T65 T8 T166</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T65 T8 T68</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">CMP T167,T65,T68</td>
+<tr bgcolor="00DDFF"><td>use:
+       T65 T68</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T167</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T65 T8 T68</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T167 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">AND T167,T167,1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T167</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T167</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T167 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T167 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">BP T167,L11</td>
+<tr bgcolor="00DDFF"><td>use:
+       T167</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T167 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L27</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L13</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L11</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T69,T8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T69</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T69</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T168,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T168</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T69</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T168 T69</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T70,T168</td>
+<tr bgcolor="00DDFF"><td>use:
+       T168</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T70</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T168 T69</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T69 T70</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T169,T69,T70</td>
+<tr bgcolor="00DDFF"><td>use:
+       T69 T70</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T169</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T69 T70</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T169</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T170,T169,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T169</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T170</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T169</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T170</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T71,T170</td>
+<tr bgcolor="00DDFF"><td>use:
+       T170</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T71</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T170</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T71</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T72,T8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T72</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T71</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T71 T72</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T171,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T171</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T71 T72</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T71 T171 T72</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">NEG T171,T171</td>
+<tr bgcolor="00DDFF"><td>use:
+       T171</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T171</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T71 T171 T72</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T71 T171 T72</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T73,T171</td>
+<tr bgcolor="00DDFF"><td>use:
+       T171</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T73</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T71 T171 T72</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T73 T71 T72</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T172,T72,T73</td>
+<tr bgcolor="00DDFF"><td>use:
+       T72 T73</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T172</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T73 T71 T72</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T71 T172</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T173,T172,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T172</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T173</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T71 T172</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T71 T173</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T74,T173</td>
+<tr bgcolor="00DDFF"><td>use:
+       T173</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T74</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T71 T173</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T74 T71</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T174,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T174</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T74 T71</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T174 T8 T74 T71</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T75,T174</td>
+<tr bgcolor="00DDFF"><td>use:
+       T174</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T75</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T174 T8 T74 T71</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T74 T71 T75</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">MUL T175,T74,T75</td>
+<tr bgcolor="00DDFF"><td>use:
+       T74 T75</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T175</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T74 T71 T75</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T175 T8 T71</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T76,T175</td>
+<tr bgcolor="00DDFF"><td>use:
+       T175</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T76</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T175 T8 T71</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T76 T8 T71</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T176,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T176</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T76 T8 T71</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T176 T76 T8 T71</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T176,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T176</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T176 T76 T8 T71</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T76 T8 T71</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T177,T71,T76</td>
+<tr bgcolor="00DDFF"><td>use:
+       T71 T76</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T177</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T76 T8 T71</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T177</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T178,T177,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T177</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T178</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T177</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T178</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T178,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T178</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T178</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ $6,_putChar</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T179,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T179</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T77,T8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T77</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T77</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T180,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T180</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T77</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T77 T180</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">NEG T180,T180</td>
+<tr bgcolor="00DDFF"><td>use:
+       T180</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T180</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T77 T180</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T77 T180</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T78,T180</td>
+<tr bgcolor="00DDFF"><td>use:
+       T180</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T78</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T77 T180</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T77 T78</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T181,T77,T78</td>
+<tr bgcolor="00DDFF"><td>use:
+       T77 T78</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T181</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T77 T78</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T181</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T79,T181</td>
+<tr bgcolor="00DDFF"><td>use:
+       T181</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T79</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T181</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T79 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T80,T8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T80</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T79 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T80 T79 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T182,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T182</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T80 T79 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T80 T79 T8 T182</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">NEG T182,T182</td>
+<tr bgcolor="00DDFF"><td>use:
+       T182</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T182</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T80 T79 T8 T182</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T80 T79 T8 T182</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T81,T182</td>
+<tr bgcolor="00DDFF"><td>use:
+       T182</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T81</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T80 T79 T8 T182</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T80 T79 T8 T81</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T183,T80,T81</td>
+<tr bgcolor="00DDFF"><td>use:
+       T80 T81</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T183</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T80 T79 T8 T81</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T79 T183 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T184,T183,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T183</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T184</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T79 T183 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T184 T79 T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T82,T184</td>
+<tr bgcolor="00DDFF"><td>use:
+       T184</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T82</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T184 T79 T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T79 T8 T82</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T185,1</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T185</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T79 T8 T82</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T79 T8 T185 T82</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T83,T185</td>
+<tr bgcolor="00DDFF"><td>use:
+       T185</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T83</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T79 T8 T185 T82</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T79 T83 T8 T82</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD T186,T82,T83</td>
+<tr bgcolor="00DDFF"><td>use:
+       T82 T83</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T186</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T79 T83 T8 T82</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T79 T8 T186</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T84,T186</td>
+<tr bgcolor="00DDFF"><td>use:
+       T186</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T84</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T79 T8 T186</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T79 T8 T84</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T84,T79,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T84 T79</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T79 T8 T84</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T187,1403</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T187</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8 T187</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">INCML T187,3</td>
+<tr bgcolor="00DDFF"><td>use:
+       T187</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T187</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8 T187</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L12</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T8</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L13</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T188,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T188</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T188</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T85,T188</td>
+<tr bgcolor="00DDFF"><td>use:
+       T188</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T85</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T188</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T85</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T9,T85</td>
+<tr bgcolor="00DDFF"><td>use:
+       T85</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T9</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T85</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T9</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L26</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T9</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T9</td></tr>
+</tr>
+</table></td>
+<td bgcolor="FFEE00"><table>
+<tr><td bgcolor="EECF00"><table width="100%">
+<tr><td><nobr>
+	  FRAME
+	  label=<font style="font-family:courier new">_main</font></nobr></td></tr>
+<tr><td><nobr>
+	  depth=1 
+	  size=32 
+	  locs=0
+	  args=16</nobr></td></tr>
+<tr><td><nobr>
+    	  FP=T10
+	  RV=T11</nobr></td></tr>
+</table></td></tr>
+<tr><td bgcolor="EECF00"><nobr>
+	    entryLabel=L28
+	    exitLabel=L29
+	    temps=0</nobr></td></tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L28</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T189,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T189</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T189</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T189,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T189</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T189</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDA T190,L1</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T190</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T190</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T190,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T190</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T190</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ $6,_putString</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T191,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T191</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T192,10</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T192</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T192</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T86,T192</td>
+<tr bgcolor="00DDFF"><td>use:
+       T192</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T86</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T192</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T86</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T193,256</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T193</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T86</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T86 T193</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T87,T193</td>
+<tr bgcolor="00DDFF"><td>use:
+       T193</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T87</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T86 T193</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T86 T87</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T194,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T194</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T86 T87</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T86 T87 T194</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T194,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T194</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T86 T87 T194</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T86 T87</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">DIV T195,T86,T87</td>
+<tr bgcolor="00DDFF"><td>use:
+       T86 T87</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T195</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T86 T87</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">GET T195,rR</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T195</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T195</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO T195,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T195</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T195</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ $6,_putChar</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO T196,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T196</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL T197,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T197</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T197</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T88,T197</td>
+<tr bgcolor="00DDFF"><td>use:
+       T197</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T88</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T197</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T88</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET T11,T88</td>
+<tr bgcolor="00DDFF"><td>use:
+       T88</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T11</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T88</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T11</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L29</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T11</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T11</td></tr>
+</tr>
+</table></td>
+</table></body>
+</html>

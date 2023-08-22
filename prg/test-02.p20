@@ -1,0 +1,5 @@
+fun f(i:integer):integer =
+    {
+       if (i<0) then i=i+1 else i=i*2;
+       f(i);
+    }

@@ -1,0 +1,57 @@
+#Check if records work
+var j: integer
+var data: { a: integer, b: integer, c: integer, d:char }
+var i: integer
+var c: char
+var presledek:char
+fun main(): integer = {
+   j=55;
+i =9;
+    c = 'c';
+    data.a = 1;
+    data.b = 2;
+    data.c = 3;
+    putChar(c);putChar(presledek);  # ce tu ni c ni kul-> recorde narobe delama
+  
+    #data.d = 'A';
+    presledek = ' ';
+   
+    c = 'A';
+    putChar(c);  # tu izpise kr neki
+    c=(65:char);
+    putChar(presledek);
+    putChar(c);	# tu izpise A
+    c = 'a';putChar(presledek);putChar(c);
+    c = 'c';putChar(presledek);putChar(c);
+   putChar(presledek);	
+   putInteger(data.a); # izpise 1
+    putChar(presledek);
+    putInteger(data.b); # tu izpise 2
+  #c=getChar();
+    putChar(presledek);
+    putInteger(data.c); 
+    i=9;
+    putChar(presledek);
+    putInteger(  data.a + data.b + data.c);
+    putChar(presledek);
+    c = 'A';
+    putInteger(i);
+    data.a + data.b + data.c;
+}
+fun getChar():char = (0:char)
+fun putChar(c:char):void = none
+fun putInteger(i:integer):void =
+    {
+      if (i<0) then { putChar('-'); i=-i; } else none;
+      if (i==0) then putChar('0') else put(i);
+    }
+    where
+    {
+      fun put(i:integer):void =
+          {
+            if (i==0) then none else {
+              put(i/10);
+              putChar(((i%10+('0':integer)):char));
+            };
+          }
+    }

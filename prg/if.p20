@@ -1,0 +1,75 @@
+var test :char
+fun main(): integer = {
+	i=0;
+	ok = 'o'; #ok
+	neok = 'n'; #not ok
+    test = 'a';
+    #putChar(test);
+	if 1<0 then putChar(neok) else putChar(ok); # if dela
+	if 0<=1 then putChar(ok)  else putChar(neok); #Ok
+	if 0<1 then putChar(ok)  else putChar(neok);	#ok
+	if 2>=1 then putChar(ok)  else putChar(neok); #ok
+	if 2>1 then putChar(ok)  else putChar(neok); #ok
+	if 2<=1 then putChar(neok)  else putChar(ok); # ok
+	if 2<1 then putChar(neok)  else putChar(ok); # OK
+	if 0>=1 then putChar(neok)  else putChar(ok);  # NEOK !!!!!
+	if 0>1 then putChar(neok)  else putChar(ok); #ok
+	if 1>=1 then putChar(ok)  else putChar(neok); # ok
+	if 0<=0 then putChar(ok)  else putChar(neok); #OK
+	if 1==1 then putChar(ok)  else putChar(neok);#Ok
+	if 1==2 then putChar(neok)  else putChar(ok);#ok
+	if 2==1 then putChar(neok)  else putChar(ok); #ok
+	# !=
+	if 1!=1 then putChar(neok)  else putChar(ok);#ok
+	if 1!=2 then putChar(ok)  else putChar(neok);#ok
+	if 1!=0 then putChar(ok)  else putChar(neok);#ok
+
+
+	if false | true then putChar(ok)  else putChar(neok);#ok
+	if true  | false then putChar(ok)  else putChar(neok);#ok
+	if true  | true then putChar(ok)  else putChar(neok);#ok
+	if false | false then putChar(neok)  else putChar(ok);#ok
+	if false & false then putChar(neok)  else putChar(ok);#ok
+	if false & true then putChar(neok)  else putChar(ok);#ok
+	if true & false then putChar(neok)  else putChar(ok); #ok
+	if true & true then putChar(ok)  else putChar(neok); #Ok
+
+	#while i<3 do {
+	#	i = i+1;
+	#	putInteger(i);}; # normalen while dela
+	0;
+}where {
+    var ok: char
+    var neok: char
+}
+var i: integer
+fun putChar(c:char):void = none
+fun putInteger(i:integer):void =
+    {
+      if (i<0) then { putChar('-'); i=-i; } else none;
+      if (i==0) then putChar('0') else put(i);
+    }
+    where
+    {
+      fun put(i:integer):void =
+          {
+            if (i==0) then none else {
+              put(i/10);
+              putChar(((i%10+('0':integer)):char));
+            };
+          }
+    }
+
+fun putString(s:^char):void =
+    {
+      i=0;
+      while (((s:integer)+(i*8):^char)^!=(0:char)) do {
+        putChar(((s:integer)+(i*8):^char)^);
+        i=i+1;
+      };
+      none;
+    }
+    where
+    {
+      var i:integer
+    }

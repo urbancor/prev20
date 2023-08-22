@@ -1,0 +1,819 @@
+<html>
+<style>
+      table, tr, td {
+      text-align: center;
+      vertical-align: top;
+      }
+    </style>
+<body><table><td bgcolor="FFEE00"><table>
+<tr><td bgcolor="EECF00"><table width="100%">
+<tr><td><nobr>
+	  FRAME
+	  label=<font style="font-family:courier new">_f</font></nobr></td></tr>
+<tr><td><nobr>
+	  depth=1 
+	  size=32 
+	  locs=0
+	  args=16</nobr></td></tr>
+<tr><td><nobr>
+    	  FP=T0
+	  RV=T1</nobr></td></tr>
+</table></td></tr>
+<tr><td bgcolor="EECF00"><nobr>
+	    entryLabel=L3
+	    exitLabel=L4
+	    temps=0</nobr></td></tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L3</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $2,$253</td>
+<tr bgcolor="00DDFF"><td>use:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T2</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T2</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $0,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T28</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T2</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T2 T28</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $1,$0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T28</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T3</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T2 T28</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T2 T3</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD $0,$2,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T2 T3</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T29</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T2 T3</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T29</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO $1,$0,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T29</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T30</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T29</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T30</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $2,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T30</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T4</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T30</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $1,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T31</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T4 T31</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T31</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T5</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T4 T31</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T5 T0 T4</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">CMP $1,$2,$0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T4 T5</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T32</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T5 T0 T4</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T32</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ZSN $1,$1,1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T32</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T32</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T32</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T32</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">BP $1,L0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T32</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T32</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L5</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L1</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $2,$253</td>
+<tr bgcolor="00DDFF"><td>use:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T6</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $1,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T33</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T33 T0 T6</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T33</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T7</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T33 T0 T6</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T6 T7</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD $1,$2,$0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T6 T7</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T34</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T6 T7</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T34</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T34</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T34</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$253</td>
+<tr bgcolor="00DDFF"><td>use:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T9</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T9</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $1,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T35</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T9</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T35 T9</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $3,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T35</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T10</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T35 T9</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T10 T9</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD $2,$0,$3</td>
+<tr bgcolor="00DDFF"><td>use:
+       T9 T10</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T36</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T10 T9</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T36</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO $1,$2,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T36</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T37</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T36</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T37</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T37</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T11</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T37</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T11</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $1,1</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T38</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T11</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T38 T11</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $2,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T38</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T12</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T38 T11</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T12 T0 T11</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD $3,$0,$2</td>
+<tr bgcolor="00DDFF"><td>use:
+       T11 T12</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T39</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T12 T0 T11</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T39</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $1,$3</td>
+<tr bgcolor="00DDFF"><td>use:
+       T39</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T13</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T39</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T13</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO $1, $0,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T13</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T8</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T13</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L2</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L1</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $1,$253</td>
+<tr bgcolor="00DDFF"><td>use:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T14</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T14 T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $2,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T40</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T14 T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T14 T0 T40</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$2</td>
+<tr bgcolor="00DDFF"><td>use:
+       T40</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T15</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T14 T0 T40</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T14 T0 T15</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD $2,$1,$0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T14 T15</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T41</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T14 T0 T15</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T41</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$2</td>
+<tr bgcolor="00DDFF"><td>use:
+       T41</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T16</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T41</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $2,$253</td>
+<tr bgcolor="00DDFF"><td>use:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T17</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T17</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $0,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T42</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T17</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T17 T42</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $1,$0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T42</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T18</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T17 T42</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T17 T18</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD $0,$2,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T17 T18</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T43</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T17 T18</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T43</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO $1,$0,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T43</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T44</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T43</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T44 T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T44</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T19</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T44 T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T19</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $1,2</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T45</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T19</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T45 T19</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $2,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T45</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T20</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T45 T19</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T20 T19</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">MUL $1,$0,$2</td>
+<tr bgcolor="00DDFF"><td>use:
+       T19 T20</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T46</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T20 T19</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T46</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $2,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T46</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T21</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T46</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T21</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO $2, $0,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T21</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T16</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T21</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">L2</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $1,1984</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T47</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T47 T0</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T47</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T22</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T47 T0</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T0 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $3,$253</td>
+<tr bgcolor="00DDFF"><td>use:
+       T0</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T23</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T0 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T23 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SETL $1,8</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T48</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T23 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T23 T48 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $2,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T48</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T24</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T23 T48 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T24 T23 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">ADD $1,$3,$2</td>
+<tr bgcolor="00DDFF"><td>use:
+       T23 T24</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T49</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T24 T23 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T49 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO $2,$1,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T49</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T50</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T49 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T50 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $1,$2</td>
+<tr bgcolor="00DDFF"><td>use:
+       T50</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T25</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T50 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T25 T22</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO $0,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T22</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T25 T22</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T25</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">STO $1,$254,8</td>
+<tr bgcolor="00DDFF"><td>use:
+       T25</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T25</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">PUSHJ _f</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+      </td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">LDO $0,$254,0</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T51</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T51</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $2,$0</td>
+<tr bgcolor="00DDFF"><td>use:
+       T51</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T26</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T51</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T26</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $1,$2</td>
+<tr bgcolor="00DDFF"><td>use:
+       T26</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T27</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T26</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T27</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">SET $0,$1</td>
+<tr bgcolor="00DDFF"><td>use:
+       T27</td></tr>
+<tr bgcolor="00DDFF"><td>def:
+       T1</td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T27</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T1</td></tr>
+</tr>
+<tr></tr>
+<tr>
+<td bgcolor="00BBFF">JMP L4</td>
+<tr bgcolor="00DDFF"><td>use:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>def:
+      </td></tr>
+<tr bgcolor="00DDFF"><td>in:
+       T1</td></tr>
+<tr bgcolor="00DDFF"><td>out:
+       T1</td></tr>
+</tr>
+</table></td></table></body>
+</html>
